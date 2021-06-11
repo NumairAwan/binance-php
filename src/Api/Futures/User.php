@@ -70,21 +70,21 @@ class User extends Request
     }
 
     /**
-     *GET /fapi/v1/balance (HMAC SHA256) USER_DATA
+     *GET /fapi/v2/balance (HMAC SHA256) USER_DATA
      * */
     public function getBalance(array $data=[]){
         $this->type='GET';
-        $this->path='/fapi/v1/balance';
+        $this->path='/fapi/v2/balance';
         $this->data=array_merge($this->data,$data);
         return $this->exec();
     }
 
     /**
-     *GET /fapi/v1/account (HMAC SHA256) USER_DATA
+     *GET /fapi/v2/account (HMAC SHA256) USER_DATA
      * */
     public function getAccount(array $data=[]){
         $this->type='GET';
-        $this->path='/fapi/v1/account';
+        $this->path='/fapi/v2/account';
         $this->data=array_merge($this->data,$data);
         return $this->exec();
     }
