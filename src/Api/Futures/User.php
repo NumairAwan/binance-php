@@ -180,14 +180,4 @@ class User extends Request
         $this->data=$data;
         return $this->exec();
     }
-    
-    /**
-     *GET /fapi/v2/positionRisk
-     */
-    public function getPositionRisk(array $data=[]){
-        $this->type='get';
-        $this->path='/fapi/v2/positionRisk';
-        $this->data=$data;
-        return $this->exec();
-    }
 }
